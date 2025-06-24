@@ -86,5 +86,5 @@ pip install tigeropen
 ---
 
 **Author:**  
-[Your Name]  
-[Date]
+PQ
+24 Jun 2025
