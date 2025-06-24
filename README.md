@@ -21,21 +21,12 @@ Key features include:
 ## Project Structure
 
 ```
-a2c_account_value.csv
 FinRL_models.ipynb
 FinRL_trading_bot.ipynb
-ppo_account_value.csv
-sac_account_value.csv
-smart_trading_bot_error.log
-smart_trading_bot.log
 data/
     account_value_yesterday.txt
     trade_data.csv
     train_data.csv
-results/
-    a2c/
-    ppo/
-    sac/
 trained_models/
     agent_a2c.zip
     agent_ppo.zip
