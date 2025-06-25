@@ -33,6 +33,7 @@ trained_models/
     agent_sac.zip
 transaction_actions/
     transaction_YYYY-MM-DD.txt
+requirements.txt
 ```
 
 ## Requirements
@@ -77,5 +78,5 @@ pip install tigeropen
 ---
 
 **Author:**  
-PQ
-24 Jun 2025
+Pei Qi
+25 Jun 2025
