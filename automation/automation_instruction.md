@@ -76,6 +76,43 @@ EXIT
 
 ------------------------------------------------------------------------
 
+## ⏰ Create Task Scheduler using Powershell (Example)
+
+``` powershell
+$Action   = New-ScheduledTaskAction -Execute "C:\Users\tpeiq\Desktop\investment\FinRL\final\automation\FinRL_model_train.bat"
+$Trigger  = New-ScheduledTaskTrigger -Weekly -DaysOfWeek Monday,Tuesday,Wednesday,Thursday,Friday -At 4:00pm
+$Settings = New-ScheduledTaskSettingsSet -StartWhenAvailable -WakeToRun
+
+Register-ScheduledTask -TaskName "FinRL_Model_Training" `
+                       -Action $Action `
+                       -Trigger $Trigger `
+                       -Settings $Settings `
+                       -RunLevel Highest `
+                       -Description "Run model training notebook automation"
+
+```
+
+------------------------------------------------------------------------
+
+## ⏰ Modify Task Scheduler using Powershell (Example)
+
+``` powershell
+$tasks = @("FinRL_Trading_Bot", "FinRL_Model_Training")
+
+foreach ($taskName in $tasks) {
+	$settings = (Get-ScheduledTask -TaskName $taskName).Settings
+	$settings.StartWhenAvailable = $true
+	$settings.WakeToRun        = $true
+
+	# Persist the changes
+	Set-ScheduledTask -TaskName $taskName -Settings $settings
+}
+
+Write-Output "Updated tasks to run when missed and wake PC: $($tasks -join ', ')"
+```
+
+------------------------------------------------------------------------
+
 ## ✅ Test Run
 
 -   Double-click your `.bat` file → it should run the notebook and
