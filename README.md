@@ -17,6 +17,7 @@ Key features include:
 - **Capital-aware execution:** Trades are limited by available cash and position sizes.
 - **Comprehensive logging:** Logs trades, errors, and account status to `smart_trading_bot.log` and `smart_trading_bot_error.log` in  `log` folder.
 - **Transaction history:** Saves daily transaction summaries in `transaction_actions/`.
+- **NOT IDEAL FOR REAL TIME TRADING**
 
 ## Project Structure
 
