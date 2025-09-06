@@ -1,7 +1,7 @@
-# FinRL_trading_bot (Testing Phase)
+# FinRL_trading_bot (Phase 1.0)
 
 > **Warning:**  
-> This project is **in testing phase**. Use at your own risk.  
+> This project is **for research and fun**. Use at your own risk.  
 > No financial advice or guarantees.  
 > Test thoroughly with paper trading before any real deployment.
 
@@ -15,7 +15,7 @@ Key features include:
 - **Daily stop-loss:** Prevents excessive losses by comparing account value to previous day.
 - **Rolling Sharpe selection:** Dynamically picks the best-performing model.
 - **Capital-aware execution:** Trades are limited by available cash and position sizes.
-- **Comprehensive logging:** Logs trades, errors, and account status to `smart_trading_bot.log` and `smart_trading_bot_error.log`.
+- **Comprehensive logging:** Logs trades, errors, and account status to `smart_trading_bot.log` and `smart_trading_bot_error.log` in  `log` folder.
 - **Transaction history:** Saves daily transaction summaries in `transaction_actions/`.
 
 ## Project Structure
