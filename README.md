@@ -71,6 +71,8 @@ pip install tigeropen
    - Info: `smart_trading_bot.log`
    - Errors: `smart_trading_bot_error.log`
    - Daily transactions: `transaction_actions/transaction_YYYY-MM-DD.txt`
+  
+5. ** Configs in the scripts:** There are configuration in the scripts, please amend them accordingly 
 
 ## Disclaimer
 
