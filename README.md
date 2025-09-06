@@ -21,6 +21,8 @@ Key features include:
 ## Project Structure
 
 ```
+automation/
+log/
 FinRL_models.ipynb
 FinRL_trading_bot.ipynb
 data/
@@ -38,7 +40,7 @@ requirements.txt
 
 ## Requirements
 
-- Python 3.8+
+- Python 3.10+
 - [TigerOpen SDK](https://github.com/tigerfintech/openapi-python-sdk)
 - [FinRL](https://github.com/AI4Finance-Foundation/FinRL)
 - Other dependencies: `pandas`, `numpy`, `yfinance`, `stable-baselines3`, etc.
