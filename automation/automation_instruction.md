@@ -156,4 +156,4 @@ jupyter nbconvert ^
 ------------------------------------------------------------------------
 
 Repeat the same process for `trading_bot_automation.bat` by changing the
-notebook path and task name.
+notebook path and task name. `trading_bot_automation.bat` included the running of the bot for paper account and real trading account, remove it accordingly.
